@@ -65,7 +65,7 @@ public class ListArrayBased<T> implements ListInterface<T>
     	        }  // end if
     	    } //end add
 
-    	    public Object get(int index)
+    	    public T get(int index)
     	    throws ListIndexOutOfBoundsException
     	    {
     	        if (index >= 0 && index < numItems)
