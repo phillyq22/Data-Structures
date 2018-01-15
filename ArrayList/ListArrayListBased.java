@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class ListArrayListBased {
-	protected ArrayList<Object> items = new ArrayList<Object>();
+public class ListArrayListBased <T> {
+	protected ArrayList<T> items = new ArrayList<T>();
 	
 	public boolean isEmpty()
 	{
@@ -15,15 +15,15 @@ public class ListArrayListBased {
 	
 	public void removeAll()
 	{
-		items = new ArrayList<Object>();
+		items = new ArrayList<T>();
 	}
 	
-	public void add(int index, Object obj) 
+	public void add(int index, T obj) 
 	{
 		items.add(index,obj);
 	}
 	
-	public Object get(int index)
+	public T get(int index)
 	{
 		return items.get(index);
 	}

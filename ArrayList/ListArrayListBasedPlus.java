@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class ListArrayListBasedPlus extends ListArrayListBased{
-	protected ArrayList<Object> items = new ArrayList<Object>();
+public class ListArrayListBasedPlus<T> extends ListArrayListBased<T>{
+	protected ArrayList<T> items = new ArrayList<T>();
 
 	public ListArrayListBasedPlus()
 	{
@@ -10,7 +10,7 @@ public class ListArrayListBasedPlus extends ListArrayListBased{
 	
 	public void reverse()
 	{
-		ArrayList<Object> newArray = new ArrayList<Object>();
+		ArrayList<T> newArray = new ArrayList<T>();
 		for(int i = size()-1; i >= 0; i--)
 		{
 			newArray.add(get(size()-i-1));
