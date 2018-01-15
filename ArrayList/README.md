@@ -1,4 +1,4 @@
-# Array List:
+# Array List
 # Author: Philip S. Quinn
 ## Version: 1/15/18
 ### Arrays are initialized to size of 3. Drivers are provided to allow for testing of the these lists.
